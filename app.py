@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_socketio import SocketIO
 from controllers.usuario_controller import usuario_bp
 from controllers.publicaciones_controller import publicaciones_bp
 from controllers.solicitud_controller import solicitud_bp
@@ -7,6 +6,7 @@ from controllers.calificacion_controller import calificacion_bp
 from controllers.panel_controller import panel_bp
 from controllers.perfil_publico_controller import perfil_publico_bp
 from controllers.chat_controller import chat_bp
+from flask_socketio import SocketIO
 from flask import render_template
 
 

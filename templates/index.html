@@ -8,24 +8,24 @@
   <script defer src="/static/script.js"></script>
 </head>
 <body>
-    <button id="boton-atras" style="display:none"><--</button>
+    <button id="boton-atras" style="display:none">--</button>
 
   <main id="app">
     <!-- LOGIN -->
-    <section id="login-section">
-      <h1>Bienvenido a SkillNet</h1>
-      <form id="login-form">
+    <section class="login-section" id="login-section">
+      <h1 class="login-title">Bienvenido a SkillNet</h1>
+      <form class="login-form" id="login-form">
         <input type="email" placeholder="Correo electrónico" id="email" required />
         <input type="password" placeholder="Contraseña" id="password" required />
         <button type="submit">Iniciar sesión</button>
       </form>
-      <p>¿No tienes cuenta? <a href="#" id="mostrar-registro">Regístrate</a></p>
+      <p class="no-account">¿No tienes cuenta? <a href="#" id="mostrar-registro">Regístrate</a></p>
     </section>
 
     <!-- REGISTRO -->
-    <section id="registro-section" style="display: none">
+    <section class="registro-section" id="registro-section" style="display: none">
       <h2>Registro</h2>
-      <form id="registro-form">
+      <form class="registro-form" id="registro-form">
         <input type="text" placeholder="Nombre completo" id="reg-nombre" required />
         <input type="email" placeholder="Correo electrónico" id="reg-email" required />
         <input type="password" placeholder="Contraseña" id="reg-password" required />
@@ -34,7 +34,7 @@
         <textarea id="reg-descripcion" placeholder="Cuéntanos sobre ti" required></textarea>
         <button type="submit">Crear cuenta</button>
       </form>
-      <p><a href="#" id="volver-login">Volver al login</a></p>
+      <p class="login-vuelta"><a href="#" id="volver-login">Volver al login</a></p>
     </section>
 
     <!-- PANEL DE USUARIO -->
